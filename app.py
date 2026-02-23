@@ -16,7 +16,6 @@ from sklearn.preprocessing import StandardScaler
 
 st.set_page_config(
     page_title="ForestIQ",
-    page_icon="🌲",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
@@ -407,7 +406,7 @@ nav_html = "".join(
 st.markdown(f"""
 <div class="gnav">
   <div class="g-brand">
-    <div class="g-logo">🌲</div>
+    <div class="g-logo">◈</div>
     <div>
       <div class="g-wordmark">ForestIQ</div>
       <div class="g-tagline">RANDOM FOREST · 7 CLASSES</div>
@@ -450,7 +449,6 @@ st.markdown(f"""
 # ── SHARED INPUTS (inline, no sidebar) ────────────────────────
 def input_panel(prefix=""):
     st.markdown('<div class="g-label">Topographic Parameters</div>', unsafe_allow_html=True)
-    st.markdown('<div class="gcard">', unsafe_allow_html=True)
     t1,t2,t3,t4,t5 = st.columns(5)
     with t1: elevation = st.slider("Elevation (m)",    1800, 3900, 2800, key=f"{prefix}elev")
     with t2: aspect    = st.slider("Aspect (°)",          0,  360,  180, key=f"{prefix}asp")
@@ -460,7 +458,6 @@ def input_panel(prefix=""):
     st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('<div style="height:.5rem"></div>', unsafe_allow_html=True)
     st.markdown('<div class="g-label">Environmental Parameters</div>', unsafe_allow_html=True)
-    st.markdown('<div class="gcard">', unsafe_allow_html=True)
     e1,e2,e3,e4,e5,e6 = st.columns(6)
     with e1: h_roads  = st.slider("H-Dist Roads (m)",  0, 7000, 1200, key=f"{prefix}hr")
     with e2: h_fire   = st.slider("H-Dist Fire (m)",   0, 7000, 1700, key=f"{prefix}hf")
@@ -684,7 +681,7 @@ if page == "classify":
     st.markdown("""
     <div class="g-footer">
       <div style="display:flex;gap:16px;align-items:center;">
-        <span style="color:var(--violet2);">🌲</span>
+        <span style="color:var(--violet2);">✦</span>
         <span>Random Forest Classifier</span>
         <span style="color:var(--glass-brd)">·</span>
         <span>54 features · 7 cover types · cartographic data</span>
@@ -798,7 +795,7 @@ elif page == "explore":
     st.markdown("""
     <div class="g-footer">
       <div style="display:flex;gap:16px;align-items:center;">
-        <span style="color:var(--violet2);">🌲</span>
+        <span style="color:var(--violet2);">✦</span>
         <span>Feature Explorer</span>
         <span style="color:var(--glass-brd)">·</span>
         <span>Elevation sweep · 4 sensitivity curves</span>
@@ -903,10 +900,10 @@ elif page == "reference":
     st.markdown("""
     <div class="g-footer">
       <div style="display:flex;gap:16px;align-items:center;">
-        <span style="color:var(--violet2);">🌲</span>
+        <span style="color:var(--violet2);">✦</span>
         <span>ForestIQ · Multi-class Classification</span>
         <span style="color:var(--glass-brd)">·</span>
-        <span>Task 3 · ML Internship · Random Forest · Scikit-learn</span>
+        <span>Random Forest · Scikit-learn</span>
       </div>
       <div>@abdel2ty</div>
     </div>
