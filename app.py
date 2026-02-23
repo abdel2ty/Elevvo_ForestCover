@@ -1,12 +1,3 @@
-"""
-╔══════════════════════════════════════════════════════════════╗
-║   ForestIQ — Forest Cover Type Classifier                   ║
-║   Glassmorphism · Soft Violet · Frosted Panels              ║
-║   Styled to match SegmentIQ design system                   ║
-╚══════════════════════════════════════════════════════════════╝
-Run: streamlit run forest_glass.py
-"""
-
 import streamlit as st
 import numpy as np
 import plotly.graph_objects as go
